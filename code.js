@@ -5,7 +5,7 @@ var score=0;
 var start1;
 var sree1,sree2;
 var mou,mouImg;
-
+var cloud;
 var START1=1;
 var PLAY1=2;
 var END1=0;
@@ -18,7 +18,7 @@ function preload(){
   birdImg=loadImage("bird.png");
   bacImg=loadImage("flappy back.png");
   bac2Img=loadImage("Screenshot 2020-12-04 181256.png");             
-
+cloud = loadImage("cloud ☁.png")
   b1=loadImage("sprite_0(1).png");
   b2=loadImage("sprite_0(2).png");
   b3=loadImage("sprite_0(5).png");
@@ -37,7 +37,7 @@ function preload(){
 function setup() {
  
   createCanvas(700,440);
-  background ("white");
+  background (cloud);
   
   bac=createSprite(350,200);
   bac.addImage("bacImg",bacImg);
